@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Favorite Hobbies</title>
+    <title>My Favorite Hobbies – Hiking, Reading &amp; Cycling</title>
 
     <style>
-        /* ---------- Base / Reset ---------- */
         * {
             margin: 0;
             padding: 0;
@@ -20,7 +19,6 @@
             background-color: #f4f6f8;
         }
 
-        /* ---------- Header ---------- */
         header {
             background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: #ffffff;
@@ -33,7 +31,6 @@
             letter-spacing: 1px;
         }
 
-        /* ---------- Navigation ---------- */
         nav {
             background-color: #16305c;
             text-align: center;
@@ -45,7 +42,6 @@
             text-decoration: none;
             margin: 0 1rem;
             font-weight: 600;
-            transition: color 0.3s ease;
         }
 
         nav a:hover,
@@ -54,7 +50,6 @@
             text-decoration: underline;
         }
 
-        /* ---------- Main content ---------- */
         main {
             max-width: 960px;
             margin: 0 auto;
@@ -78,12 +73,17 @@
             padding-bottom: 0.25rem;
         }
 
-        /* ---------- Gallery ---------- */
         .gallery {
             display: flex;
             flex-wrap: wrap;
             gap: 1.25rem;
             justify-content: center;
+        }
+
+        .gallery figure {
+            margin: 0;
+            text-align: center;
+            max-width: 280px;
         }
 
         .gallery img {
@@ -92,15 +92,15 @@
             object-fit: cover;
             border-radius: 8px;
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .gallery img:hover {
-            transform: scale(1.04);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+        .gallery figcaption {
+            font-size: 0.9rem;
+            color: #555;
+            font-style: italic;
+            margin-top: 0.5rem;
         }
 
-        /* ---------- List ---------- */
         ul {
             list-style: none;
             padding-left: 0;
@@ -115,7 +115,6 @@
             font-size: 1.05rem;
         }
 
-        /* ---------- External link ---------- */
         .external-link {
             text-align: center;
             font-size: 1.05rem;
@@ -135,7 +134,6 @@
             border-bottom-color: #2a5298;
         }
 
-        /* ---------- Footer ---------- */
         footer {
             background-color: #1e3c72;
             color: #cfd8e3;
@@ -144,7 +142,6 @@
             font-size: 0.9rem;
         }
 
-        /* ---------- Responsive ---------- */
         @media (max-width: 600px) {
             header h1 {
                 font-size: 1.8rem;
@@ -164,38 +161,43 @@
 </head>
 <body>
 
-    <!-- Semantic tag #1: header -->
     <header>
         <h1>My Favorite Hobbies</h1>
     </header>
 
-    <!-- Semantic tag #2: nav -->
     <nav>
         <a href="#gallery">Gallery</a>
         <a href="#list">Why I Love Them</a>
     </nav>
 
-    <!-- Semantic tag #3: main -->
     <main>
 
         <section id="gallery">
             <h2>Photo Gallery</h2>
 
             <div class="gallery">
-                <!-- Image 1 -->
-                <img src="hiking.jpg"
-                     alt="Hiker standing on a rocky mountain summit at sunrise"
-                     width="300" height="200">
 
-                <!-- Image 2 -->
-                <img src="reading.jpg"
-                     alt="Open book with a cup of coffee on a wooden table"
-                     width="300" height="200">
+                <figure>
+                    <img src="hiking.jpg"
+                         alt="Hiker standing on a rocky mountain summit at sunrise"
+                         width="280" height="200">
+                    <figcaption>Sunrise on the summit — the reward after a long climb.</figcaption>
+                </figure>
 
-                <!-- Image 3 -->
-                <img src="cycling.jpg"
-                     alt="Cyclist riding a road bike along a coastal path"
-                     width="300" height="200">
+                <figure>
+                    <img src="reading.jpg"
+                         alt="Open book with a cup of coffee on a wooden table"
+                         width="280" height="200">
+                    <figcaption>A quiet morning with a good book and a warm cup of coffee.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="cycling.jpg"
+                         alt="Cyclist riding a road bike along a coastal path"
+                         width="280" height="200">
+                    <figcaption>Coastal rides are my favorite way to stay active.</figcaption>
+                </figure>
+
             </div>
         </section>
 
@@ -218,7 +220,6 @@
 
     </main>
 
-    <!-- Semantic tag #4: footer -->
     <footer>
         <p>&copy; 2026 My Hobbies Page</p>
     </footer>
