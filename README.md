@@ -24,8 +24,16 @@ A single-page website about my favorite hobbies (hiking, reading, and cycling).
 
 ## Live Site
 
-View the hosted page here: **https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/**
+View the hosted page here: **https://AhmedGDeeb.github.io/my-hobbies-page/**
+
+## Validation
+
+- [W3C Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fahmedgdeeb.github.io%2Fmy-hobbies-page%2F)
+![W3C Validation](w3c.JPG)
+
+- [WAVE Accessibility Check](https://wave.webaim.org/report#/https://AhmedGDeeb.github.io/my-hobbies-page/)
+![WAVE Accessibility Check](wave.JPG)
 
 ## Author
 
-Your Name – Coursera learner
+Ahmad Deeb – Coursera learner
